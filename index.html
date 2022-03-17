@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fruit Energy</title>
+
+  <link rel="stylesheet" href="./fontawesome-free-6.0.0-web/css/all.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+  <link rel="stylesheet" href="./css/grip.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="./dist/assets/owl.theme.default.min.css">
+
+</head>
+
+<body>
+  <div id="wrapper">
+    <div id="header">
+
+      <!--Navigation-->
+      <nav id="nav" class="grid wide">
+        <div class="nav-logo">
+          <h1>CLEVERFOOD</h1>
+        </div>
+
+        <div class="nav-menu">
+          <ul class="menu-list">
+            <li>
+              <a class="nav-link active" href="#">HOME PAGE</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#">INTRODUCE</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#">
+                SHOP
+                <i class="fa-solid fa-chevron-down arrow-down"></i>
+              </a>
+              <ul class="sub-nav">
+                <li>
+                  <a href="#">Vegetable</a>
+                </li>
+                <li>
+                  <a href="#">Fruit</a>
+                </li>
+                <li>
+                  <a href="#">Drinks</a>
+                </li>
+                <li>
+                  <a href="#">Dry food</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="nav-link" href="#">KNOWLEDGE</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+
+        <!--Navbar toggle reponsive Tablet-->
+        <div class="nav-toggle">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+        </div>
+
+        <div class="nav-overlay"></div>
+
+        <div class="nav-mobile-close">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+
+        <div class="nav-mobile">
+          <ul class="menu-list-mobile">
+            <li>
+              <a href="#">TRANG CHỦ</a>
+            </li>
+            <li>
+              <a href="#">GIỚI THIỆU</a>
+            </li>
+            <li>
+              <a href="#">CỬA HÀNG</a>
+                <span class="arrow-mobile">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </span>
+              <ul class="sub-nav-mobile">
+                <li>
+                  <a href="#">Rau củ</a>
+                </li>
+                <li>
+                  <a href="#">Trái cây</a>
+                </li>
+                <li>
+                  <a href="#">Đồ uống</a>
+                </li>
+                <li>
+                  <a href="#">Đồ khô</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">KIẾN THỨC</a>
+            </li>
+            <li>
+              <a href="#">LIÊN HỆ</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav-login-tablet">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+        <div class="nav-login">
+          <a href="#" id="search-icon-navbar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <span class="search-menu-navbar">
+              <input type="text" placeholder="Search...">
+              <button> <i class="fa-solid fa-magnifying-glass"></i></button>
+            </span>
+          </a>
+
+          <a href="#" class="form-login-admin">
+            <i class="fa-solid fa-user"></i>
+            <span class="form-login">
+              <form action="">
+                <h1>ĐĂNG NHẬP</h1>
+               <div class="form-login-user">
+                <label for="username">Tên tài khoản hoặc địa chỉ email *</label><br>
+                <input type="text" id="username">
+                <small></small>
+               </div>
+
+               <div class="form-login-user">
+                <label for="password">Mật khẩu *</label><br>
+                <input type="password" id="password">
+                <small></small>
+               </div>
+
+               <div class="form-login-user">
+                <button id="submit">ĐĂNG NHẬP</button>
+                <input type="checkbox" id="checkbox"><span>Ghi nhớ mật khẩu</span><br>
+                <p>Quên mật khẩu?</p>
+               </div>
+              </form>
+            </span>
+          </a>
+
+          <a href="#" class="shopping">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span>
+              <p>There are no products in the cart</p>
+            </span>
+          </a>
+          <a href="#" class="translation">
+            English
+            <i class="fa-solid fa-chevron-down arrow-down"></i>
+            <div class="nav-login-translate">
+              <p>Vietnamese</p>
+              <p>English</p>
+            </div>
+          </a>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Slider-->
+    <div id="slider">
+     <div class="slider-container">
+      <div class="slider-image">
+        <div class="slider-item">
+          <img src="https://images.pexels.com/photos/4551975/pexels-photo-4551975.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+        </div>
+        <div class="slider-item">
+          <img src="https://images.pexels.com/photos/8215114/pexels-photo-8215114.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+        </div>
+        <div class="slider-item">
+          <img src="https://images.pexels.com/photos/1410138/pexels-photo-1410138.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940s" alt="">
+        </div>
+      </div>
+
+      <div class="slider-content">
+        <span>Apple Juice</span>
+        <h2>100% nature</h2>
+        <p>Discount when you order today</p>
+        <button>
+          <h4>BUY NOW</h4>
+        </button>
+      </div>
+
+      <div class="slider-chevron">
+        <i class="fa-solid fa-circle-chevron-left" id="prevButton"></i>
+        <i class="fa-solid fa-circle-chevron-right" id="nextButton"></i>
+      </div>
+     </div>
+    </div>
+
+    <div class="slider-banner grid wide">
+      <div class="slider-banner-1">
+        <div class="banner-organic">
+          <img src="./img/banner1.jpg" alt="">
+        </div>
+
+        <div class="banner-fruits">
+          <img src="./img/banner3.jpg" alt="">
+        </div>
+      </div>
+      <div class="slider-banner-2">
+        <div class="banner-fresh">
+          <img src="./img/banner2.jpg" alt="">
+        </div>
+
+        <div class="banner-sale">
+          <img src="./img/banner4.jpg" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div id="main">
+      <div class="main-top-content">
+        <h1>Featured Products</h1>
+      </div>
+
+      <div class="main-menu">
+        <span class="main-menu-list active" id="list1">Latest</span>
+        <span class="main-menu-list" id="list2">Discount</span>
+        <span class="main-menu-list" id="list3">Selling</span>
+      </div>
+      
+      <div class="main-product">
+        <div class="grid wide">
+          <div class="row menu-product actives">
+            <div class="col l-3">
+              <div class="product-new">
+                <div class="main-product-list">
+                  <img id="img1" src="./img/product1.jpg" alt="">
+                </div>
+                <div class="product-price">
+                  <a href="#">Cucumber</a>
+                  <span>50,000 ₫</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col l-3">
+             <div class="product-new">
+              <div class="main-product-list">
+                <img src="./img/product2.jpg" alt="">
+              </div>
+              <div class="product-price">
+                <a href="#">Tomato</a>
+                <span>320,000 ₫</span>
+              </div>
+             </div>
+            </div>
+
+            <div class="col l-3">
+             <div class="product-new">
+              <div class="main-product-list">
+                <img src="./img/product3.jpg" alt="">
+              </div>
+              <div class="product-price">
+                <a href="#">Mango</a>
+                <span>180,000 ₫</span>
+              </div>
+             </div>
+            </div>
+
+            <div class="col l-3">
+             <div class="product-new">
+              <div class="main-product-list">
+                <img src="./img/product4.jpg" alt="">
+              </div>
+              <div class="product-price">
+                <a href="#">Passion Fruit</a>
+                <span>190,000 ₫</span>
+              </div>
+             </div>
+            </div>
+
+            <div class="col l-3">
+             <div class="product-new">
+              <div class="main-product-list">
+                <img src="./img/product5.jpg" alt="">
+              </div>
+              <div class="product-price">
+                <a href="#">Dig</a>
+                <span>330,000 ₫</span>
+              </div>
+             </div>
+            </div>
+
+            <div class="col l-3">
+             <div class="product-new">
+              <div class="main-product-list">
+                <img src="./img/product6.jpg" alt="">
+              </div>
+              <div class="product-price">
+                <a href="#">Chilli</a>
+                <span>450,000 ₫</span>
+              </div>
+             </div>
+            </div>
+
+            <div class="col l-3">
+              <div class="product-new">
+                <div class="main-product-list">
+                  <img src="./img/product7.jpg" alt="">
+                </div>
+                <div class="product-price">
+                  <a href="#">Green Apple</a>
+                  <span>220,000 ₫</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col l-3">
+              <div class="product-new">
+                <div class="main-product-list">
+                  <img src="./img/product8.jpg" alt="">
+                </div>
+                <div class="product-price">
+                  <a href="#">Banana</a>
+                  <span>150,000 ₫</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row menu-product">
+            <div class="col l-3">
+              <div class="product-new">
+                <div class="main-product-list">
+                  <img id="img1" src="./img/product9.jpg" alt="">
+                </div>
+                <div class="product-price">
+                  <a href="#">Coconut Wax</a>
+                  <span>35,000 ₫</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col l-3">
+             <div class="product-new">
+              <div class="main-product-list">
+                <img src="./img/product10.jpg" alt="">
+              </div>
+              <div class="product-price">
+                <a href="#">Walnuts</a>
+                <span>120,000 ₫</span>
+              </div>
+             </div>
+            </div>
+
+            <div class="col l-3">
+             <div class="product-new">
+              <div class="main-product-list">
+                <img src="./img/product5.jpg" alt="">
+              </div>
+              <div class="product-price">
+                <a href="#">Dig</a>
+                <span>330,000 ₫</span>
+              </div>
+             </div>
+            </div>
+
+            <div class="col l-3">
+             <div class="product-new">
+              <div class="main-product-list">
+                <img src="./img/product13.jpg" alt="">
+              </div>
+              <div class="product-price">
+                <a href="#">Cauliflower</a>
+                <span>350,000 ₫</span>
+              </div>
+             </div>
+            </div>
+
+            <div class="col l-3">
+             <div class="product-new">
+              <div class="main-product-list">
+                <img src="./img/product14.jpg" alt="">
+              </div>
+              <div class="product-price">
+                <a href="#">Oranges</a>
+                <span>250,000 ₫</span>
+              </div>
+             </div>
+            </div>
+
+            <div class="col l-3">
+             <div class="product-new">
+              <div class="main-product-list">
+                <img src="./img/product4.jpg" alt="">
+              </div>
+              <div class="product-price">
+                <a href="#">Passion Fruit</a>
+                <span>190,000 ₫</span>
+              </div>
+             </div>
+            </div>
+
+            <div class="col l-3">
+              <div class="product-new">
+                <div class="main-product-list">
+                  <img src="./img/product7.jpg" alt="">
+                </div>
+                <div class="product-price">
+                  <a href="#">Green Apple</a>
+                  <span>220,000 ₫</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col l-3">
+              <div class="product-new">
+                <div class="main-product-list">
+                  <img src="./img/product11.jpg" alt="">
+                </div>
+                <div class="product-price">
+                  <a href="#">Green Grapes</a>
+                  <span>320,000 ₫</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row menu-product">
+            <div class="col l-3">
+              <div class="product-new">
+                <div class="main-product-list">
+                  <img id="img1" src="./img/product3.jpg" alt="">
+                </div>
+                <div class="product-price">
+                  <a href="#">Mango</a>
+                  <span>180,000 ₫</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col l-3">
+             <div class="product-new">
+              <div class="main-product-list">
+                <img src="./img/product8.jpg" alt="">
+              </div>
+              <div class="product-price">
+                <a href="#">Banana</a>
+                <span>150,000 ₫</span>
+              </div>
+             </div>
+            </div>
+
+            <div class="col l-3">
+             <div class="product-new">
+              <div class="main-product-list">
+                <img src="./img/product6.jpg" alt="">
+              </div>
+              <div class="product-price">
+                <a href="#">Chilli</a>
+                <span>450,000 ₫</span>
+              </div>
+             </div>
+            </div>
+
+            <div class="col l-3">
+             <div class="product-new">
+              <div class="main-product-list">
+                <img src="./img/product7.jpg" alt="">
+              </div>
+              <div class="product-price">
+                <a href="#">Green Apple</a>
+                <span>220,000 ₫</span>
+              </div>
+             </div>
+            </div>
+
+            <div class="col l-3">
+             <div class="product-new">
+              <div class="main-product-list">
+                <img src="./img/product11.jpg" alt="">
+              </div>
+              <div class="product-price">
+                <a href="#">Green Grapes</a>
+                <span>320,000 ₫</span>
+              </div>
+             </div>
+            </div>
+
+            <div class="col l-3">
+             <div class="product-new">
+              <div class="main-product-list">
+                <img src="./img/product12.jpg" alt="">
+              </div>
+              <div class="product-price">
+                <a href="#">Pineapple</a>
+                <span>150,000 ₫</span>
+              </div>
+             </div>
+            </div>
+
+            <div class="col l-3">
+              <div class="product-new">
+                <div class="main-product-list">
+                  <img src="./img/product1.jpg" alt="">
+                </div>
+                <div class="product-price">
+                  <a href="#">Cucumber</a>
+                  <span>50,000 ₫</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col l-3">
+              <div class="product-new">
+                <div class="main-product-list">
+                  <img src="./img/product2.jpg" alt="">
+                </div>
+                <div class="product-price">
+                  <a href="#">Tomato</a>
+                  <span>320,000 ₫</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-slider">
+        <div class="main-slider-image">
+          <img src="https://images.pexels.com/photos/6177680/pexels-photo-6177680.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+        </div>
+        <div class="main-slider-content">
+          <h1>Quality Products</h1>
+          <p>Opportunity for your family to own preferential products</p>
+        </div>
+
+        <div class="main-slider-time">
+          <div class="slider-time-hour">
+            <h1>0</h1>
+            <br>
+            <span>Hour</span>
+          </div>
+          <div class="slider-time-minute">
+            <h1>0</h1>
+            <br>
+            <span>Minute</span>
+          </div>
+          <div class="slider-time-second">
+            <h1>0</h1>
+            <br>
+            <span>Second</span>
+          </div>
+        </div>
+
+       <div class="main-slider-carousel grid wide">
+        <div class="owl-carousel owl-theme">
+          <div class="item"><img src="https://media.istockphoto.com/photos/fresh-picture-id1164349316?k=20&m=1164349316&s=612x612&w=0&h=uSAj4f7tp1J0Ap3TnDmPxbbLokFLX8WJ5b5uikux2Mo=" alt=""></div>
+          <div class="item"><img src="https://media.istockphoto.com/photos/healthy-appetizing-red-smoothie-dessert-in-glasses-picture-id1081369140?k=20&m=1081369140&s=612x612&w=0&h=A0yGDUHEXlO-JLEG9Gp1jSXU5Rw3j0KY2KGszxxyKR0=" alt=""></div>
+          <div class="item"><img src="https://media.istockphoto.com/photos/blended-fruit-smoothies-picture-id635911456?k=20&m=635911456&s=612x612&w=0&h=LzrgXIVICCT6V6cRWjP7tsHeSRSh4WqBGFcvBVW9COY=" alt=""></div>
+          <div class="item"><img src="https://media.istockphoto.com/photos/glass-of-orange-juice-on-a-wooden-in-field-picture-id507211196?k=20&m=507211196&s=612x612&w=0&h=RERIgexvM7oNJMrn213jxi0LuIgy5aTPMGTvLenNz-0=" alt=""></div>
+          <div class="item"><img src="https://media.istockphoto.com/photos/freshly-blended-green-fruit-smoothie-in-glass-jar-with-straw-picture-id531477972?k=20&m=531477972&s=612x612&w=0&h=QQhl95ZBjMrUxTXKA2mlSlbBsoGHq2meL6BNxfT4Oyk=" alt=""></div>
+          <div class="item"><img src="https://media.istockphoto.com/photos/detox-diet-concept-green-vegetables-on-rustic-table-picture-id950743798?k=20&m=950743798&s=612x612&w=0&h=4hJFLTLuPkoOBfAEgxc7Sl9EGSkEv6Qc9BSfeBPNOvw=" alt=""></div>
+          <div class="item"><img src="https://media.istockphoto.com/photos/refreshing-red-drink-with-fresh-raspberries-and-crushed-ice-picture-id1129294540?k=20&m=1129294540&s=612x612&w=0&h=KqlzIrQedyFh2z2s4mHeV1t2LShHKQhFu1Kl9D-zyhw=" alt=""></div>
+        </div>
+       </div>
+      </div>
+
+      <div class="main-trademark">
+        <div class="main-author">
+          <img src="http://mauweb.monamedia.net/vuonrau/wp-content/uploads/2019/05/member2-150x150.png" alt="">
+          <p>Lorem ipsum dolor sit amet<br>
+            Ut officia consequatur et iusto sint ab laudantium consequatur qui natus magnam!<br>
+            Et sapiente consequatur et provident voluptates aut perspiciatis error
+          </p>
+          <span>Master / Facebook</span>
+        </div>
+
+        <div class="main-trademark-slider grid wide">
+          <div class="owl-carousel owl-theme">
+            <div class="item"><img src="./logo/brand1.png" alt=""></div>
+            <div class="item"><img src="./logo/brand2.png" alt=""></div>
+            <div class="item"><img src="./logo/brand3.png" alt=""></div>
+            <div class="item"><img src="./logo/brand4.png" alt=""></div>
+            <div class="item"><img src="./logo/brand5.png" alt=""></div>
+            <div class="item"><img src="./logo/brand6.png" alt=""></div>
+        </div>
+        </div>
+      </div>
+
+      <div class="main-news">
+        <div class="grid wide">
+          <h1>Knowledge</h1>
+          <div class="row">
+            <div class="col l-4">
+          <div class="main-news-column">
+                <img src="https://images.pexels.com/photos/4993105/pexels-photo-4993105.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                <div class="main-news-content">
+                  <a href="#"><h5>What is the effect of mushrooms?</h5></a>
+                  <p>More than 2000 years ago, forest mushrooms
+                    known and used..</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col l-4">
+              <div class="main-news-column">
+                <img src="https://images.pexels.com/photos/4551832/pexels-photo-4551832.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                <div class="main-news-content">
+                  <a href="#"><h5>What's good to eat with green rice?</h5></a>
+                  <p>
+                    Bread rollsis a type of cake made from plain rice flour, filling...</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col l-4">
+              <div class="main-news-column">
+                <img src="https://images.pexels.com/photos/4443476/pexels-photo-4443476.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                <div class="main-news-content">
+                  <a href="#"><h5>What do strawberries make for drinks??</h5></a>
+                  <p>Strawberry yogurt smoothie is a special variation from this fruit. When combined..</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col l-4">
+              <div class="main-news-column">
+                <img src="https://images.pexels.com/photos/4144243/pexels-photo-4144243.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                <div class="main-news-content">
+                  <a href="#"><h5>How to make peach smoothie?</h5></a>
+                  <p>How to make banana peach smoothie is very simple. Peel peaches, remove seeds...</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col l-4">
+              <div class="main-news-column">
+                <img src="https://images.pexels.com/photos/4551832/pexels-photo-4551832.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                <div class="main-news-content">
+                  <a href="#"><h5>What's good to eat with green rice?</h5></a>
+                  <p>
+                    Bread rollsis a type of cake made from plain rice flour, filling...</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col l-4 m-">
+              <div class="main-news-column">
+                <img src="https://images.pexels.com/photos/4443476/pexels-photo-4443476.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                <div class="main-news-content">
+                  <a href="#"><h5>What do strawberries make for drinks??</h5></a>
+                  <p>Strawberry yogurt smoothie is a special variation from this fruit. When combined..</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-begin">
+        <img src="./img/img12.jpg" alt="">
+        <div class="main-begin-content">
+          <h1>Sign up to receive updates</h1>
+          <p>Leave your email so you don't miss any offers</p>
+        </div>
+
+        <div class="main-begin-input">
+          <input type="text" placeholder="      Email...">
+          <button>Registration</button> 
+        </div>
+      </div>
+
+    </div>
+
+    <div id="footer">
+      <div class="grid wide">
+        <div class="row">
+          <div class="col l-4 footer-logo">
+            <img src="https://mauweb.monamedia.net/cleverfood/wp-content/uploads/2019/05/logo-new.png" alt="">
+            <p>2740 Canal St
+              New Orleans LA 70119
+              USA</p>
+              <a href="#">012 345 6789</a>
+              <a href="#">demonhunterg@gmail.com</a>
+              <a href="#">mon@mona.media</a>
+          </div>
+          <div class="col l-2 footer-menu">
+            <h3>Menu</h3>
+            <a href="#">Home page</a>
+            <a href="#">Introduce</a>
+            <a href="#">Shop</a>
+            <a href="#">Knowledge</a>
+            <a href="#">Contact</a>
+          </div>
+          <div class="col l-2 footer-menu">
+            <h3>Product</h3>
+            <a href="#">Vegetable</a>
+            <a href="#">Fruit</a>
+            <a href="#">Drinks</a>
+            <a href="#">Dry food</a>
+          </div>
+          <div class="col l-4 footer-menu-app">
+            <h3>Instagram</h3>
+            <p>Instagram did not return a 200.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <script src="./js/main.js"></script>
+  <script src="./jquery/jquery-3.6.0.min.js"></script>
+  <script src="./dist/owl.carousel.min.js"></script>
+
+  <script>
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:20,
+    nav:true,
+    dots: false,
+    autoWidth:false,
+    navText: ['<i class="fa-solid fa-chevron-left nav-icons fa-chevron-left-main"></i>', '<i class="fa-solid fa-chevron-right nav-icons fa-chevron-right-main"></i>'],
+    responsive:{
+        0:{
+            items:1
+        },
+        768:{
+            items:3
+        },
+        1280:{
+            items:4
+        }
+    }
+})
+  </script>
+</body>
+
+</html>
